@@ -8,3 +8,5 @@ logs/
 venv/
 *.vdi
 *.lck
+*~
+*.log
