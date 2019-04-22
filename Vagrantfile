@@ -355,6 +355,11 @@ Vagrant.configure(2) do |config|
                         ansible.limit = 'all'
                         ansible.playbook = playbook
                         ansible.groups = ansible_groups
+                        unless node_id['ansible_extra_vars'].nil?
+                          if node_id['ansible_extra_vars']
+                            ansible.extra_vars = node_id['ansible_extra_vars']
+                          end
+                        end
                       end
                     end
                   end
