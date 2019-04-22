@@ -8,3 +8,5 @@ find . -type f -name "*.retry"
 find . -type f -name "*.retry" -exec rm {} +
 find . -type f -name "*.vmdk"
 find . -type f -name "*.vmdk" -exec rm {} +
+cat /dev/null > hosts
+rm -f host_vars/*
